@@ -1,11 +1,11 @@
 .. image:: https://github.com/oskarfernlund/stochastic-processes/blob/master/figures/logo2.png
-    :width: 600
+    :width: 500
     :align: left
 
-Fun with stochastic processes!
-
 This project is a sandbox for playing around with, analysing and visualising 
-different types of stochastic processes.
+different types of stochastic processes. The current focus is on equiprobable 
+random walks in two dimensions, but more stochastic processes may be added over 
+time.
 
 
 Dependencies
