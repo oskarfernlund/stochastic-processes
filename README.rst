@@ -1,4 +1,7 @@
-.. image:: https://raw.githubusercontent.com/oskarfernlund/stochastic-processes/master/figures/logo.png
+.. .. image:: https://raw.githubusercontent.com/oskarfernlund/stochastic-processes/master/figures/logo.png
+..     :width: 500
+
+.. image:: https://github.com/oskarfernlund/stochastic-processes/blob/master/figures/logo.png
     :width: 500
 
 Fun with stochastic processes!
