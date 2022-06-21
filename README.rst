@@ -1,9 +1,12 @@
-.. image:: https://github.com/oskarfernlund/stochastic-processes/blob/master/figures/logo.png
-    :width: 500
+.. image:: https://github.com/oskarfernlund/stochastic-processes/blob/master/figures/logo2.png
+    :width: 600
 
 ========================================
 
 Fun with stochastic processes!
+
+This project is a sandbox for playing around with, analysing and visualising 
+different types of stochastic processes.
 
 
 Dependencies
