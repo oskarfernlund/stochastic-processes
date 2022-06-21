@@ -1,5 +1,6 @@
 .. image:: https://github.com/oskarfernlund/stochastic-processes/blob/master/figures/logo2.png
     :width: 600
+    :align: left
 
 Fun with stochastic processes!
 
