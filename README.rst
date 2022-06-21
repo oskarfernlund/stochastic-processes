@@ -1,7 +1,7 @@
 .. image:: https://raw.githubusercontent.com/oskarfernlund/stochastic-processes/master/figures/logo.png
     :width: 500
 
-Fun with stochastic processes! 
+Fun with stochastic processes!
 
 
 Dependencies
