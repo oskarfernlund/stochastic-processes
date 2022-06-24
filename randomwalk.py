@@ -18,9 +18,9 @@ plt.style.use("seaborn")
 #  GLOBAL VARIABLES
 # =============================================================================
 
-SEED = 69
-N_STEPS = 1000
-N_PATHS = 100000
+SEED = 0
+N_STEPS = 10000
+N_PATHS = 10000
 
 
 # =============================================================================
@@ -151,7 +151,7 @@ def compute_hitting_times_2D(samples, boundary_func):
     x, y = samples[:, :, 0], samples[:, :, 1]
     on_boundary = boundary_func(x, y)
     hitting_times = on_boundary.argmax(axis=0)
-    hitting_times[hitting_times == 0] = 1e10
+    hitting_times[hitting_times == 0] = N_STEPS
     return hitting_times
 
 
@@ -189,6 +189,7 @@ def plot_hitting_times(hitting_times, figsize=(8, 5)):
     fig, ax = plt.subplots(1, 1, figsize=figsize)
     ax.hist(hitting_times, color="C0", alpha=0.5)
     ax.set_xlabel("hitting time")
+    ax.set_ylabel("frequency")
 
 
 # =============================================================================
@@ -207,6 +208,6 @@ if __name__ == "__main__":
     samples2D = randomwalk2D.sample(steps=N_STEPS, paths=N_PATHS)
     hitting_times = compute_hitting_times_2D(samples2D, circle_check)
     print(f"\nAvg. hitting time: {np.average(hitting_times)}s\n")
-    # plot_hitting_times(hitting_times)
+    plot_hitting_times(hitting_times)
     # plot_2D_samples(samples2D)
     plt.show()
